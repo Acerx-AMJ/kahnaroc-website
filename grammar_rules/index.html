@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grammar Rules</title>
+      <link rel="stylesheet" href="../top_bar_style.css?v=4">
+   </head>
+
+   <body>
+      <div id="top_bar">
+         <a href="../index.html">Overview</a>
+         <a href="../dictionary/index.html">Dictionary</a>
+         <a class="selected">Grammar</a>
+      </div>
+
+      <div id="body">
+         <h1>Grammar Rules</h1>
+
+         <details id="toc" open>
+            <summary>Table of Contents</summary>
+            <a href="#sentences">Sentences</a> •
+            <a href="#structures">Structures</a> •
+            <a href="#words">Words</a> •
+            <a href="#compounding">Compounding & Conversion</a> •
+            <a href="#numerals">Numerals</a> •
+            <a href="#punctuation">Punctuation</a> •
+            <a href="#pronunciation">Pronunciation</a> •
+            <a href="#alphabet">Alphabet Subset</a>
+         </details>
+
+         <section>
+            <h3 id="sentences">Sentences</h3>
+            <p><span></span>Sentence clauses in Kahnaroc must contain a subject and the action. Any interjections and descriptive words may be used to expand a sentence. A single sentence may contain one or more clauses.</p>
+            <p><span></span>Kahnaroc contains implied verbs, therefore sentences with only the subject and no action are valid. Kahnaroc does not have implied pronouns.</p>
+            <p><span></span>Sentences must be separated by semicolons <code>;</code>. The last sentence must not end with a semicolon. Question marked sentences must end with a question mark <code>?</code> and command marked sentences with an exclamation mark <code>!</code>. If there's a sentence after a question/command marked sentence, a semicolon would not be used.</p>
+            <p><span></span>Sentences with an interjection in them must end with an exclamation mark, unless question marked.</p>
+            <p><span></span>Paragraphs of text must be separated with a newline and a starting space. Semicolon in the ending sentence of the previous paragraph must not be used.</p>
+            <p><span></span>Connectors that are able to connect clauses may be used at the start of sentence clauses.</p>
+            <p>There are five types of sentences:</p>
+            <ul>
+               <li><code>Basic sentence</code> - contains only the subject and the action, or just the subject with an implied verb. Interjections may also be used.</li>
+               <li><code>Extended sentence</code> - expands the basic sentence by including additional words that describe other words.</li>
+               <li><code>Compound sentence</code> - combines two or more independent clauses, separated by separators or commas. Each clause must satisfy sentence needs.</li>
+               <li><code>Speech sentence</code> - used to indicate speech. Indirect speech sentences are not speech sentences, but compound sentences instead, as they contain two or more sentence clauses.</li>
+               <li><code>Interjection sentence</code> - does not contain the subject, action or any describing words, as it only contains an interjection. Sentence only containing a question marked word is also an interjection sentence. Interjection sentences are not considered independent clauses.</li>
+            </ul>
+         </section>
+
+         <section>
+            <h3 id="structures">Structures</h3>
+            <h4>Sentence Structures</h4>
+            <p><span></span>Kahnaroc has participle phrase structures, which are verb-based modifiers. They must be separated by commas on both sides, unless a sentence ends or starts there. To create a participle phrase, the verb must have a suffix <code>-ang</code> appended and there must be at least one word describing the verb.</p>
+            <p><span></span>Kahnaroc also has parenthetical and appositive phrases. They must go after the word that they describe further. They must be separated by commas, dashes or parentheses on both sides. If parentheses aren't used, then the punctuation must not be used at the start or end of a sentence.</p>
+            <p><span></span>Conditional phrases may be used to introduce rules or exceptions. It has two structures: <code>Efz (condition), Denac (result)</code> and <code>(result) Efz (condition)</code>. <code>Denac</code> may be omitted.</p>
+            <p><span></span>Speech structure may use the speaker's tag, or omit it. Reported speech must use the speaker's tag. To create reported speech, speaker's tag plus comma must be followed by <code>that</code> and after the quotation (e.g: <code>Ma Zodzun, Doz Ju Jod Grac</code>). Reported speech does not use quotes, while speech does.</p>
+            <p>Speech structure's speaker's tag may have different placement:</p>
+            <ul>
+               <li>Speaker's tag is not present; speaker is not specified (e.g: <code>"Ju Jod Grac"</code>).</li>
+               <li>Before quotation (e.g: <code>Ma Zodzun, "Ju Jod Grac"</code>).</li>
+               <li>After quotation (e.g: <code>"Ju Jod Grac," Ma Zodzun</code>).</li>
+               <li>In midst of the quotation (e.g: <code>"Ju," Ma Zodzun, "Jod Grac"</code>).</li>
+            </ul>
+            <p><span></span>If vocative or vocative group is used in speech, it must be separated by commas on both sides and the speech clause must end with an exclamation mark (e.g: <code>"John, Zaj Jod Grac!"</code>).</p>
+            <p><span></span>If writing a formal piece of work, addressing a person by you, you all, your, yours, yourself, then these pronouns must be fully capitalized (e.g: <code>JU, JURZ, JURZEF</code>). Full capitalization is not a sign of screaming, but a sign of respect in Kahnaroc.</p>
+            <h4>Group Structures</h4>
+            <p><span></span>An implied pause may be added using three dots <code>...</code>, which may also act as a connector.</p>
+            <p><span></span>Group members or grouped sentences must be separated by a comma <code>,</code>, three dots or a connector.</p>
+            <p><span></span>Connectors, commas and three dots (when separating) must be in-between the two members being connected.</p>
+            <p><span></span>If multiple connectors, commas or three dots are used in a row, referencing to the same group, then none of the connectors should be separated by a comma (e.g: <code>Ma Und Ju Und Zaj, Doz Und Ouz Und Dozz</code>).</p>
+            <p><span></span>Groups may be described using a single word, in that case the group should be separated by dashes <code>-</code> on all sides (e.g: <code>Ouz - Ma Und Ju</code>, where <code>Ouz</code> describes <code>Ma Und Ju</code>).</p>
+            <p><span></span>Group elements must not be implied nor omitted.</p>
+            <p><span></span>Repeated words must follow the same rules as groups, as they count as groups and aren't a specific structure.</p>
+         </section>
+
+         <section>
+            <h3 id="words">Words</h3>
+            <p><span></span>All words must have a starting capital letter, including English and brand names.</p>
+            <p><span></span>Kahnaroc uses the following alphabet: <code>Aa Bb Cc Dd Ee Ff Gg Hh Jj Mm Nn Oo Pp Rr Tt Uu Vv Zz</code>, in total 18 words, from which 4 are vowels and 14 are consonants.</p>
+            <p><span></span>There are 3 allowed vowel pairs: <code>AU</code>, <code>OU</code> and <code>OA</code>. Others vowel pairs are forbidden. Base words must not end nor start with a vowel pair. Consonant doubles (e.g: <code>GG</code>) are not allowed in base words.</p>
+            <p><span></span>There is a maximum of 3 consonants per cluster and 2 vowels per cluster. As well as no more than 4 syllables for a base word. It's encouraged to shorten compound words longer than 5 syllables.</p>
+            <p><span></span>All adjectives must end with <code>-ac</code>. All verbs must end with <code>-ad</code>. Verbs in phrase structures must end with <code>-ang</code>.</p>
+            <p><span></span>Plurality may be specified using suffix <code>-z</code>. It must be appended last before possessive marker. Words ending with <code>Z</code> also must include this suffix.</p>
+            <p><span></span>To show ownership or association, possessive marker <code>'z</code> must be appended. It must be appended last. Plural nouns also must use this.</p>
+            <p><span></span>Action and subject can be shortened when using <code>Jod</code> (e.g: <code>Ju Jod Grac</code> to <code>Ju'd Grac</code>). Possessive marker cannot be used when shortening like this. Tense, participle phrase and marker suffixes must also be added (e.g: <code>Ju'den Grac</code>).</p>
+            <p><span></span>Determiners <code>A</code> and <code>Zad</code> may optionally be used to give context, but they are not mandatory.</p>
+            <p><span></span>Base words must not start with prefixes <code>No-</code> and <code>Ce-</code>, and they must not end with suffixes (unless specified by their word type) <code>-ac</code>, <code>-ad</code>, <code>-ang</code>, <code>-du</code>, <code>-tag</code>, <code>-vag</code> <code>-zun</code>, <code>-en</code>. Numeral endings are allowed.</p>
+            <p><span></span>Word order in sentence matters. Kahnaroc uses SVO (Subject-Verb-Object) sequence, similarly to English.</p>
+            <p><span></span>Particles must go after the verb in phrasal verbs. Prepositions and modal verbs must be used before the target word.</p>
+            <p><span></span>Words are built like this: prefix, root, suffix. A word may not have a prefix or a suffix, but it must have the root. If suffix combined with the root create an illegal word pair (e.g: double, illegal vowel pair), then the last letters of the root must be removed until there are no illegal word pairs.</p>
+            <p>There are 8 different types of words:</p>
+            <ul>
+               <li><code>Nouns</code> - words that describe objects, beings, ideas, phenomenons; also pronouns, determiners and names. Examples: rock, cat, freedom, lighting, he, this, John.</li>
+               <li><code>Verbs</code> - words that describe actions or occurrences. Examples: be, think, do.</li>
+               <li><code>Adjectives</code> - words that describe or modify nouns or verbs, this includes adverbs. Examples: good, big, quickly, always.</li>
+               <li><code>Prepositions</code> - words that describe time, direction or position. Also includes particles. They come before the noun that they describe. Examples: in, on, out, because of.</li>
+               <li><code>Particle</code> - words that modify verbs. Only used for phrasal verbs.</li>
+               <li><code>Connectors</code> - words that connect words, sentences or groups. Examples: and, or, but, as.</li>
+               <li><code>Interjections</code> - words that show emotion or reaction. Examples: wow, ouch, hey.</li>
+               <li><code>Modal Verbs</code> - verbs that describe a verb and express possibility. Examples: may, must, should, might.</li>
+               <li><code>Numerals</code> - verbs that describe numbers or order. Examples: one, two, first, second.</li>
+            </ul>
+            <p>There are 3 different tenses in Kahnaroc:</p>
+            <ul>
+               <li><code>Past tense</code> - action happened in the past and has already passed. Verbs in the past tense end with <code>-zun</code>.</li>
+               <li><code>Present tense</code> - action is happening right now. It might continue in the future and might have started in the past. Verbs in this tense do not have a suffix; this is the default form.</li>
+               <li><code>Future tense</code> - action has not happened and is not happening yet. It is planned or will happen in the future. Verbs in the future tense end with <code>-en</code>.</li>
+            </ul>
+            <p>Adjectives have comparative and superlative states as follow:</p>
+            <ul>
+               <li><code>Default state</code> - the lowest state. This state does not have a suffix; this is the default form.</li>
+               <li><code>Comparative state</code> - bigger than the default state. Comparative adjectives have suffix <code>-tag</code>.</li>
+               <li><code>Superlative state</code> - biggest state. Superlative adjectives have suffix <code>-vag</code>.</li>
+            </ul>
+            <p><span></span>If an adjective or verb is one syllable long, then the verb tense/adjective state suffix gets appended at the end, if it is more than a syllable long, then the suffix replaces the adjective/verb suffix (e.g: <code>Jod</code> -> <code>Jodzun</code>, <code>Grac</code> -> <code>Gractag</code> and <code>Drezad</code> -> <code>Drezun</code>, <code>Admarac</code> -> <code>Admartag</code>).</p>
+         </section>
+
+         <section>
+            <h3 id="compounding">Compounding & Conversion</h3>
+            <h4>Word Compounding & Conversion</h4>
+            <p><span></span>Word types such as modal verbs, interjections, connectors and prepositions must not be converted nor compounded.</p>
+            <p><span></span>To convert a noun, it must not be plural. To convert a verb or an adjective, it must be in the default form.</p>
+            <p><span></span>Words may only be converted and compounded if the result is semantically and grammatically valid.</p>
+            <p><span></span>Words may only have one conversion ending; converting a single word multiple times is forbidden.</p>
+            <p><span></span>Nouns may be created from verbs and adjectives by adding suffix <code>-an</code>. Adjectives may be created from nouns and verbs by adding suffix <code>-ac</code>. Verbs may be created from nouns and adjectives by adding suffix <code>-ad</code>.</p>
+            <p><span></span>Two or three base nouns (or converted nouns from base words) may be combined to create a compound noun, which is written together. Every noun's except the last one's ending sequence of vowels must be removed. Adjectives may also be combined into compound adjectives, where the same rules apply.</p>
+            <p><span></span>Official compounds are listed in the dictionary. However, unofficial, as long as they apply to all rules, may also be used as though official.</p>
+            <h4>English Embedding & Conversion</h4>
+            <p>English has 12 tenses, whereas Kahnaroc only 3. Here is a guide to translating:</p>
+            <ul>
+               <li>Simple past, past continuous, past perfect and past perfect continuos all map to the past tense in Kahnaroc (e.g: I walked, I was walking, I had walked, I had been walking convert to <code>Ma Goadzun</code>).</li>
+               <li>Simple present, present continuous, present perfect and present perfect continuous all map to the present tense in Kahnaroc (e.g: I walk, I am walking, I have walked, I have been walking convert to <code>Ma Gaod</code>).</li>
+               <li>Simple future, future continuous, future perfect and future perfect continuous all map to the future tense (e.g: I will walk, I will be walking, I will have walked, I will have been walking convert to <code>Ma Gaoden</code>).</li>
+            </ul>
+            <p><span></span>To adapt an English word into Kahnaroc, all word rules must be met. This means converting letters - <code>I</code>, <code>K</code>, <code>L</code>, <code>Q</code>, <code>S</code>, <code>W</code>, <code>X</code> and <code>Y</code> - to their Kahnaroc counterparts, as well as adding word type specific suffixes. Some letters may be omitted if it better represents the word. Here's a table of all letter conversions:</p>
+            <table>
+               <thead><tr>
+                  <th>Letter in English</th>
+                  <th>Letter(s) in Kahnaroc</th>
+               </tr></thead>
+               <tbody>
+                  <tr><td><code>I</code></td><td><code>E</code></td></tr>
+                  <tr><td><code>K</code></td><td><code>C</code></td></tr>
+                  <tr><td><code>L</code></td><td><code>F</code>, <code>V</code>, <code>H</code></td></tr>
+                  <tr><td><code>Q</code></td><td><code>CUV</code>, <code>CV</code>, <code>C</code></td></tr>
+                  <tr><td><code>S</code></td><td><code>Z</code></td></tr>
+                  <tr><td><code>W</code></td><td><code>V</code></td></tr>
+                  <tr><td><code>X</code></td><td><code>ECZ</code>, <code>CZ</code></td></tr>
+                  <tr><td><code>Y</code></td><td><code>J</code>, <code>EJ</code></td></tr>
+               </tbody>
+            </table>
+            <p><span></span>For example, noun whiskey would convert to <code>Vhezcej</code>, adjective quick would convert to <code>Cuvecac</code> and verb relax would convert to <code>Refaczad</code>.</p>
+            <p><span></span>English (or any language) text may be embedded by placing it in quotes (e.g: <code>Ma Name Jod "John"</code>, <code>"My name" Jod John</code>). Embedding is informal, unless embedding a company, brand or an untranslatable name. A Kahnaroc sentence must not be fully replaced by embedding, but multiple English sentences can be embedded at once.</p>
+            <p><span></span>More formal way of embedding is parenthetical embedding. Parenthetical embedding explains a concept, just like parenthetical phrases, by embedding. The embedded text must come after the described word and must be placed in parentheses (e.g: <code>Ma Name Jod Jace (English: Jake)</code>). It is deemed informal if the language or the fact that it is embedded is not specified.</p>
+         </section>
+
+         <section>
+            <h3 id="numerals">Numerals</h3>
+            <p><span></span>Numerals follow English compounding rules, where higher numbers must precede lower ones (e.g: <code>Etz-Taaj-Dza-Hund-Zagej-Zuv</code>).</p>
+            <p><span></span>In formal communication numerals must be connected using dashes (including negative prefix and dot) (e.g: <code>No-Zuvej-Dotz-An</code>). In informal communication the numbers may be written together, each number's starting letter being capitalized (e.g: <code>NoZuvejDotzAn</code>). Numerals may also be written using numbers (e.g: <code>-70.1</code>), which is formal. A dot must be used instead of comma as the decimal point.</p>
+            <p><span></span>To specify a negative numeral, the preposition <code>No</code> must be used as a preposition. If numeral is formal, preposition <code>No</code> must be connected with a dash.</p>
+            <p><span></span>To specify a decimal point, the word <code>Dotz</code> must be used. It also must be connected using dashes if numeral is formal.</p>
+            <p><span></span>Numbers from 11-19 including are simply written as 'ten (number)' (e.g: <code>Zan Dza</code>), there are no specific words for them.</p>
+            <p><span></span>To write numerals 20, 30, 40, 50, 60, 70, 80, 90, the suffix <code>-ej</code> must be appended (e.g: <code>Funej</code>).</p>
+            <p><span></span>To specify ordinals (e.g: first, second), suffix <code>-zd</code> must be used for the last numeral (e.g: <code>Anzd</code>). To define a multiplicative numeral (e.g: once, twice), suffix <code>-zav</code> must be appended to the last numeral (e.g: <code>Drazav</code>).</p>
+         </section>
+
+         <section>
+            <h3 id="punctuation">Punctuation</h3>
+            <p><span></span>Kahnaroc contains 10 punctuation marks: semicolon <code>;</code>, question mark <code>?</code>, exclamation mark <code>!</code>, comma <code>,</code>, three dots <code>...</code>, dash <code>-</code>, quotes <code>"</code>, apostrophe <code>'</code> and left and right parentheses <code>()</code>.</p>
+            <p><span></span>When placing anything in quotes, the quote type does not matter, as long as both the starting and ending quote match.</p>
+            <p><span></span>Sentences must be separated by semicolons. Last sentence (in a paragraph or generally) should not end with a semicolon.</p>
+            <p><span></span>Command marked sentences must end with an exclamation mark and question marked sentences must end with a question mark. A semicolon must not be used if a sentence ends with a question or exclamation mark.</p>
+            <p><span></span>Non-marked sentences that contain an interjection must end with an exclamation mark.</p>
+            <p><span></span>Grouped sentences/members should be separated with commas, three dots or connectors. If multiple connectors are used in a row, referencing the same group, then all but the first connector and any connector after a comma/three dots must have a comma before it.</p>
+            <p><span></span>If a group is described by a different word, the grouped members must be separated by a dash on both sides.</p>
+            <p><span></span>Participle, parenthetical and appositive phrase structures must be separated by commas on both sides. Parenthetical and appositive phrases may also be separated by dashes or parentheses.</p>
+            <p><span></span>When using conditional phrases, if the condition is before the result, then a comma must be used after the condition.</p>
+            <p><span></span>Quotation in speech must be separated by quotes on both sides. If the speaker's tag is before the quotation, a comma must be used. If it is after, a comma/question mark/exclamation mark must be used before the closing quote based on the last sentence. If it is in midst of the quotation, a comma/exclamation mark must be used before the closing quote of the first quotation, as well as a comma after the speaker's tag.</p>
+            <p><span></span>Two punctuation marks must not be right next to each other. Exceptions are quotes and parentheses next to any punctuation mark, as well as commas next to dashes.</p>
+         </section>
+
+         <section>
+            <h3 id="pronunciation">Pronunciation</h3>
+            <p><span></span>When speaking or reading, a small pause must be taken after any punctuation mark. A pause after every connector is optional.</p>
+            <p><span></span>Names of individuals and places must be read and written just like they would be in English. Brand, art, company, etc. names must also be read and written just like they are in English, but they also must be placed in quotes.</p>
+            <p><span></span>Kahnaroc, unlike English, is pronounced exactly as is written. Each letter represents a constant sound. There are no silent letters.</p>
+            <p id="phoneme_table">Here's a list of all sounds:</p>
+            <table>
+               <thead><tr>
+                  <th>Letter(s)</th>
+                  <th>IPA Sound</th>
+                  <th>English</th>
+               </tr></thead>
+               <tbody>
+                  <tr><td><code>A</code></td><td><code>/a/</code></td><td>father</td></tr>
+                  <tr><td><code>B</code></td><td><code>/b/</code></td><td>bee</td></tr>
+                  <tr><td><code>C</code></td><td><code>/k/</code></td><td>car</td></tr>
+                  <tr><td><code>D</code></td><td><code>/d/</code></td><td>dog</td></tr>
+                  <tr><td><code>E</code></td><td><code>/e/</code></td><td>let</td></tr>
+                  <tr><td><code>F</code></td><td><code>/f/</code></td><td>from</td></tr>
+                  <tr><td><code>G</code></td><td><code>/g/</code></td><td>good</td></tr>
+                  <tr><td><code>H</code></td><td><code>/h/</code></td><td>hello</td></tr>
+                  <tr><td><code>J</code></td><td><code>/j/</code></td><td>young</td></tr>
+                  <tr><td><code>M</code></td><td><code>/m/</code></td><td>mother</td></tr>
+                  <tr><td><code>N</code></td><td><code>/n/</code></td><td>name</td></tr>
+                  <tr><td><code>O</code></td><td><code>/o/</code></td><td>brother</td></tr>
+                  <tr><td><code>P</code></td><td><code>/p/</code></td><td>penguin</td></tr>
+                  <tr><td><code>R</code></td><td><code>/r/</code></td><td>rage</td></tr>
+                  <tr><td><code>T</code></td><td><code>/t/</code></td><td>ten</td></tr>
+                  <tr><td><code>U</code></td><td><code>/u/</code></td><td>tuna</td></tr>
+                  <tr><td><code>V</code></td><td><code>/v/</code></td><td>video</td></tr>
+                  <tr><td><code>Z</code></td><td><code>/z/</code></td><td>zen</td></tr>
+                  <tr><td><code>ZH</code></td><td><code>/ʒ/</code></td><td>measure</td></tr>
+                  <tr><td><code>AC</code></td><td><code>/as/</code></td><td>gas</td></tr>
+                  <tr><td><code>AU</code></td><td><code>/aw/</code></td><td>awful</td></tr>
+                  <tr><td><code>OU</code></td><td><code>/ow/</code></td><td>bow</td></tr>
+                  <tr><td><code>OA</code></td><td><code>/oa/</code></td><td>boat</td></tr>
+                  <tr><td><code>'z</code></td><td><code>/ez/</code></td><td>fez</td></tr>
+                  <tr><td><code>'d</code></td><td><code>/d/</code></td><td>dog</td></tr>
+               </tbody>
+            </table>
+         </section>
+
+         <section>
+            <h3 id="alphabet">Alphabet Subset</h3>
+            <p><span></span>Kahnaroc contains an optional alphabet subset. Kahnaroc may both be written in English letters (as in the dictionary) or with a modified Georgian alphabet (Mkhedruli script), which is called Kahnur. Words written in Kahnur are not capitalized.</p>
+            <p><span></span>Kahnur characters also map to constant sounds. The characters must not be pronounced like they do in Georgian, but like they do in Kahnaroc. It is simply a different way to write.</p>
+            <p><span></span>When writing in Kahnur, in overlaps first precedence belongs to trigrams then bigrams and finally single letters. If two equal groups overlap, the first one would have greater precedence (e.g: <code>Azhatzaz</code> (not a real word) would be written as <code>თჰყპთ</code>).</p>
+            <p><span></span>Punctuation of Kahnur is the same as in Kahnaroc. Punctuation marks are the same as in Kahnaroc.</p>
+            <p><span></span>Kahnur can be written informally if only the 18 base letter characters are used. It is forbidden to skip some bigrams or trigrams, but write others.</p>
+            <p>Full table of characters may be seen below:</p>
+            <table>
+               <thead><tr>
+                  <th>Kahnaroc</th>
+                  <th>Kahnur</th>
+                  <th>IPA Sound</th>
+               </tr></thead>
+               <tbody>
+                  <tr><td><code>A</code></td><td><code>ყ</code> (q'ari)</td><td><code>/a/</code></td></tr>
+                  <tr><td><code>B</code></td><td><code>ჟ</code> (zhani)</td><td><code>/b/</code></td></tr>
+                  <tr><td><code>C</code></td><td><code>ვ</code> (vini)</td><td><code>/k/</code></td></tr>
+                  <tr><td><code>D</code></td><td><code>მ</code> (mani)</td><td><code>/d/</code></td></tr>
+                  <tr><td><code>E</code></td><td><code>ჲ</code> (iota)</td><td><code>/e/</code></td></tr>
+                  <tr><td><code>F</code></td><td><code>ჩ</code> (chini)</td><td><code>/f/</code></td></tr>
+                  <tr><td><code>G</code></td><td><code>ბ</code> (bani)</td><td><code>/g/</code></td></tr>
+                  <tr><td><code>H</code></td><td><code>ჰ</code> (hae)</td><td><code>/h/</code></td></tr>
+                  <tr><td><code>J</code></td><td><code>უ</code> (uni)</td><td><code>/j/</code></td></tr>
+                  <tr><td><code>M</code></td><td><code>შ</code> (shini)</td><td><code>/m/</code></td></tr>
+                  <tr><td><code>N</code></td><td><code>ნ</code> (nari)</td><td><code>/n/</code></td></tr>
+                  <tr><td><code>O</code></td><td><code>ო</code> (oni)</td><td><code>/o/</code></td></tr>
+                  <tr><td><code>P</code></td><td><code>ღ</code> (ghani)</td><td><code>/p/</code></td></tr>
+                  <tr><td><code>R</code></td><td><code>გ</code> (gani)</td><td><code>/r/</code></td></tr>
+                  <tr><td><code>T</code></td><td><code>ს</code> (sani)</td><td><code>/t/</code></td></tr>
+                  <tr><td><code>U</code></td><td><code>ი</code> (ini)</td><td><code>/u/</code></td></tr>
+                  <tr><td><code>V</code></td><td><code>ძ</code> (dzili)</td><td><code>/v/</code></td></tr>
+                  <tr><td><code>Z</code></td><td><code>ა</code> (ani)</td><td><code>/z/</code></td></tr>
+                  <tr><td><code>AC</code></td><td><code>ფ</code> (pari)</td><td><code>/as/</code></td></tr>
+                  <tr><td><code>AD</code></td><td><code>ხ</code> (khani)</td><td><code>/ad/</code></td></tr>
+                  <tr><td><code>AN</code></td><td><code>ლ</code> (lasi)</td><td><code>/an/</code></td></tr>
+                  <tr><td><code>AZ</code></td><td><code>თ</code> (tani)</td><td><code>/az/</code></td></tr>
+                  <tr><td><code>EN</code></td><td><code>კ</code> (k'ani)</td><td><code>/en/</code></td></tr>
+                  <tr><td><code>JA</code></td><td><code>ჯ</code> (jani)</td><td><code>/ja</code></td></tr>
+                  <tr><td><code>RA</code></td><td><code>ქ</code> (kani)</td><td><code>/ra/</code></td></tr>
+                  <tr><td><code>TA</code></td><td><code>ც</code> (tsani)</td><td><code>/ta/</code></td></tr>
+                  <tr><td><code>TZ</code></td><td><code>პ</code> (p'ari)</td><td><code>/tz/</code></td></tr>
+                  <tr><td><code>UN</code></td><td><code>ზ</code> (zeni)</td><td><code>/un/</code></td></tr>
+                  <tr><td><code>VA</code></td><td><code>რ</code> (rae)</td><td><code>/va/</code></td></tr>
+                  <tr><td><code>ZA</code></td><td><code>დ</code> (doni)</td><td><code>/za/</code></td></tr>
+                  <tr><td><code>ZH</code></td><td><code>ტ</code> (t'ari)</td><td><code>/ʒ/</code></td></tr>
+                  <tr><td><code>ZT</code></td><td><code>წ</code> (ts'ili)</td><td><code>/zt/</code></td></tr>
+                  <tr><td><code>TAG</code></td><td><code>ჭ</code> (ch'ari)</td><td><code>/tag/</code></td></tr>
+                  <tr><td><code>ZUN</code></td><td><code>ე</code> (eni)</td><td><code>/zun/</code></td></tr>
+               </tbody>
+            </table>
+         </section>
+      </div>
+   </body>
+</html>

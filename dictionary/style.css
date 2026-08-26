@@ -1,0 +1,259 @@
+#sub_header {
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   color: #ccc;
+   text-align: center;
+}
+
+#dictionary_container {
+   padding: 1rem;
+   max-width: 1000px;
+   margin: auto;
+}
+
+#search_bar {
+   width: 100%;
+   padding: 0.5rem;
+   font-size: 1rem;
+   background-color: #333;
+   color: white;
+   border: 1px solid #666;
+   text-align: left;
+   transition: .1s background-color ease-in-out;
+   border-radius: 7.5px;
+}
+
+#search_bar:focus {
+   outline: 2px solid #999;
+   background-color: #2a2a2a;
+}
+
+#dictionary {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 1rem;
+}
+
+.entry {
+   border: 1px solid #666;
+   padding: 0.75rem;
+   background-color: #555;
+   box-shadow: 2px 2px 5px #222;
+   position: relative;
+   transition: .1s background-color ease-in-out;
+   border-radius: 2.5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.entry:hover {
+   background-color: #666;
+   box-shadow: 3px 3px 6px #111;
+}
+
+.word {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #ffd700;
+   display: block;
+   text-align: left;
+}
+
+.description {
+   font-size: 0.95rem;
+   margin-bottom: 0.5rem;
+}
+
+.tags {
+   margin-top: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0.3rem;
+}
+
+.tag {
+   font-size: 0.8rem;
+   padding: 0.2rem 0.5rem;
+   border-radius: 0.4rem;
+   background-color: #444;
+   color: #ddd;
+}
+
+.tag.noun {
+   background-color: #ffc9cf;
+   color: #7a243f;
+}
+
+.tag.measurement {
+   background-color: #c9b1b5;
+   color: #45252f;
+}
+
+.tag.pronoun {
+   background-color: #ffc7fa;
+   color: #7a247a;
+}
+
+.tag.determiner {
+   background-color: #fec7bf;
+   color: #7a3124;
+}
+
+.tag.verb {
+   background-color: #d1ffcf;
+   color: #296c21;
+}
+
+.tag.modal {
+   background-color: #d7fda1;
+   color: #4d6c21;
+}
+
+.tag.adjective {
+   background-color: #fff59c;
+   color: #6a5b00;
+}
+
+.tag.preposition {
+   background-color: #d5f4f6;
+   color: #146369;
+}
+
+.tag.particle {
+   background-color: #a8c4c6;
+   color: #2f4445;
+}
+
+.tag.interjection {
+   background-color: #a5b0ff;
+   color: #333b81;
+}
+
+.tag.numeral {
+   background-color: #ffc192;
+   color: #644017;
+}
+
+.tag.marker {
+   background-color: #bd94f7;
+   color: #3c125a;
+}
+
+.tag.connector {
+   background-color: #d9a670;
+   color: #3d2509;
+}
+
+.tag.parenthetical {
+   background-color: #da9d84;
+   color: #361f16;
+}
+
+#pagination {
+   margin-top: 1.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+#pagination button {
+   background-color: #666;
+   color: white;
+   border: 1px solid #999;
+   padding: 0.5rem 1rem;
+   width: 3.5rem;
+   height: 2.5rem;
+   cursor: pointer;
+   transition: .1s transform ease-in-out, .1s background-color ease-in-out;
+}
+
+#pagination button:disabled {
+   opacity: 0.5;
+   cursor: default;
+}
+
+#page_numbers {
+   display: flex;
+   gap: 0.3rem;
+   align-items: center;
+}
+
+#page_numbers button {
+   padding: 0.4rem 0.7rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+#page_numbers .active {
+   font-weight: bold;
+   background-color: #999;
+   cursor: default;
+}
+
+#pagination button:hover:not(.active):enabled {
+   background-color: #777;
+   transform: scale(1.25);
+}
+
+#pagination button:active:not(.active):enabled {
+   background-color: #aaa;
+   transform: scale(1);
+}
+
+.favorite_icon, #show_favorites {
+   width: 1.5rem;
+   height: 1.5rem;
+   cursor: pointer;
+   user-select: none;
+   transition: .1s transform ease-in-out; 
+}
+
+.favorite_icon:hover, #show_favorites:hover {
+   transform: scale(1.3);
+}
+
+.favorite_icon:active, #show_favorites:active {
+   transform: scale(1);
+}
+
+.favorite_icon {
+   position: absolute;
+   top: 0.5rem;
+   right: 0.5rem;
+}
+
+#search_wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.75rem;
+   margin-bottom: 1.5rem;
+}
+
+.entry, #pagination button, .favorite_icon, #show_favorites {
+   transform-origin: center;
+}
+
+@media (max-width: 600px) {
+   #dictionary_container {
+      padding: 1.5rem 1.5rem;
+   }
+
+   #dictionary {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+   
+   #pagination {
+      gap: .5rem;
+   }
+
+   #pagination button:not(#page_numbers button) {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.4rem 0.7rem;
+   }
+}

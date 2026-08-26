@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dictionary</title>
+      <link rel="stylesheet" href="style.css?v=3">
+      <link rel="stylesheet" href="../top_bar_style.css?v=4">
+   </head>
+
+   <body>
+      <div id="top_bar">
+         <a href="../index.html">Overview</a>
+         <a class="selected">Dictionary</a>
+         <a href="../grammar_rules/index.html">Grammar</a>
+      </div>
+
+      <div id="dictionary_container">
+         <h1>Kahnaroc Dictionary</h1>
+         <h4 id="sub_header"></h4>
+
+         <div id="search_wrapper">
+            <input type="text" id="search_bar" placeholder="Search..." onfocus="this.select()"/>
+            <img id="show_favorites" src="../assets/heart.png"/>
+         </div>
+
+         <div id="dictionary"></div>
+
+         <div id="pagination">
+            <button id="first_page">&lt;&lt;</button>
+            <button id="prev_page">&lt;</button>
+            <div id="page_numbers"></div>
+            <button id="next_page">&gt;</button>
+            <button id="last_page">&gt;&gt;</button>
+         </div>
+      </div>
+
+      <script src="script.js?v=3"></script>
+   </body>
+</html>
